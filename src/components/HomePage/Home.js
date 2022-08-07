@@ -1,7 +1,6 @@
 import React from "react";
-import Navbar from "../Navbar";
 import styled from "styled-components";
-import HomePageImg from "C:/Users/user/Desktop/HSIPL_WEB_Front-end/hsipl_web/src/assets/images/bg3.svg";
+import HomePageImg from "../../assets/images/bg3.svg";
 import HomeIntroduction from "./HomeIntroduction";
 
 const HomeContain = styled.div`

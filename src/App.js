@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import About_HSIPL from "./components/About_HSIPL";
+import About_HSIPL from "./components/About_HSIPL/About_HSIPL";
 import React from "react";
 import Home from "./components/HomePage/Home";
 

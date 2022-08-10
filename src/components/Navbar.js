@@ -88,8 +88,8 @@ const Navbar = () => {
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ps-4">
-          {pages.map((page) => (
-            <li class="nav-item ps-3 ">
+          {pages.map((page,index) => (
+            <li class="nav-item ps-3 " key={index}>
               <style>{TextAndHover}</style>
               <a
                 activeClass="active"
@@ -103,8 +103,8 @@ const Navbar = () => {
             </li>
           ))}
 
-          {MulitiplePages.map((multiple) => (
-            <li class="nav-item dropdown px-3">
+          {MulitiplePages.map((multiple,index) => (
+            <li class="nav-item dropdown px-3" key={index}>
               <a
                 class="nav-link dropdown-toggle text-white"
                 href={multiple.href}
@@ -121,8 +121,8 @@ const Navbar = () => {
               >
                 <style>{PageContain}</style>
                 <style>{DroupDown}</style>
-                {multiple.list.map((listName) => (
-                  <li>
+                {multiple.list.map((listName,index) => (
+                  <li key={index}>
                     <a class="dropdown-item ps-4 " href="#">
                       {listName}
                     </a>

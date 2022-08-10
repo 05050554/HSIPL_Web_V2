@@ -124,7 +124,7 @@ const HomeIntroduction = () => {
     <IntrodctionContain>
       <GridContain>
         {Intro.map((item, index) => (
-          <OneGridContain>
+          <OneGridContain key={index}>
             <Icon>
               <IconImg src={item.img} href="#" alt={item.name}></IconImg>
               <GridTitle>{item.name}</GridTitle>

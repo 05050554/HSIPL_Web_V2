@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import logo from "../../assets/images/LOGO_1.png";
-import About_Carousel from "./About_Carousel";
+import About_Carousel from "./AboutCarousel";
 
 const AboutContain = styled.div`
   float: right;

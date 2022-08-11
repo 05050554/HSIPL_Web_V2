@@ -1,12 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import About_HSIPL from "./components/About_HSIPL/About_HSIPL";
+import About_HSIPL from "./components/AboutHSIPL/AboutHSIPL";
 import React from "react";
 import Home from "./components/HomePage/Home";
 
-import News from "./components/News";
-
+import News from "./components/News/News";
+import Members from "./components/Members/Members";
 import  { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
 html{
@@ -26,6 +26,8 @@ function App() {
       <Home />
       <About_HSIPL />
       <News/>
+      <Members/>
+ 
     </div>
   );
 }

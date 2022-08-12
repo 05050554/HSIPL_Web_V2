@@ -7,6 +7,7 @@ import Home from "./components/HomePage/Home";
 
 import News from "./components/News/News";
 import Honor from "./components/Honor/Honor";
+import LabDirector from "./components/LabDirector/LabDirector";
 import Members from "./components/Members/Members";
 import  { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
@@ -28,6 +29,7 @@ function App() {
       <About_HSIPL />
       <News/>
       <Honor/>
+      <LabDirector/>
       <Members/>
  
     </div>

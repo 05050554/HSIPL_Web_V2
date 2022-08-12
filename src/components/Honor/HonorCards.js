@@ -81,7 +81,7 @@ const HonorCards = () => {
     slidesToScroll: 4,
     responsive: [
       {
-        breakpoint: 1700,
+        breakpoint: 1650,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,

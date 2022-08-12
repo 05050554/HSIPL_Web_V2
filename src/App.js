@@ -8,6 +8,7 @@ import Home from "./components/HomePage/Home";
 import News from "./components/News/News";
 import Honor from "./components/Honor/Honor";
 import LabDirector from "./components/LabDirector/LabDirector";
+import Research_Interests from "./components/Research_Interests/Research_Interests";
 import Members from "./components/Members/Members";
 import  { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
@@ -30,6 +31,7 @@ function App() {
       <News/>
       <Honor/>
       <LabDirector/>
+      <Research_Interests/>
       <Members/>
  
     </div>

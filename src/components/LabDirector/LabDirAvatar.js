@@ -1,32 +1,31 @@
 import React from "react";
 import styled from "styled-components";
 import Professor_img from "../../img/Professor/Professor_img.jpg";
-const LabTitle = styled.h1`
-    padding-bottom: 5%;
-`;
 const LabAvatarContent = styled.div`
   display: grid;
-  grid-template-rows: 1fr 5fr;
+  flex: 2;
+  align-items: center;
+`;
+const LabTitle = styled.h1`
   font-family: Oswald;
   letter-spacing: 0.2rem;
   font-size: 3rem;
+  font-weight: bold;
+  align-items: center;
+  display: grid;
   justify-items: center;
-  padding: 20% 0% 20% 10%;
+  padding: 2% 0%;
   text-align: center;
-  @media (max-width: 900px) {
-    display: grid;
-  }
 `;
 
 const ProfImage = styled.img`
-  width: 60%;
-
   margin-bottom: 5%;
-
+  width:50%;
+  align-items: center;
   margin-left: 0;
   border-radius: 25%;
   border: solid white 0.5rem;
-
+  display: grid;
   justify-self: center;
 `;
 

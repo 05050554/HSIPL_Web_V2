@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import styled from "styled-components";
 import Box from "@mui/material/Box";
@@ -7,7 +7,8 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Unstable_Grid2";
 import { Image } from "antd";
-import "antd/dist/antd.css";
+import "antd/dist/antd.min.css"
+
 
 const CardSty = `
   .gird{
@@ -16,7 +17,6 @@ const CardSty = `
     justify-content: center;
   
   }
- 
 `;
 
 const Content = styled.div``;

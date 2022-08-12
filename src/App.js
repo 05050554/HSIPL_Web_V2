@@ -6,6 +6,7 @@ import React from "react";
 import Home from "./components/HomePage/Home";
 
 import News from "./components/News/News";
+import Honor from "./components/Honor/Honor";
 import Members from "./components/Members/Members";
 import  { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
@@ -26,6 +27,7 @@ function App() {
       <Home />
       <About_HSIPL />
       <News/>
+      <Honor/>
       <Members/>
  
     </div>

@@ -23,7 +23,7 @@ const CardImg = `
 `;
 
 const ResearchContent = styled.div`
-padding-bottom:3%;
+  padding-bottom: 3%;
 `;
 
 const Research_Interests_Cards = () => {
@@ -54,17 +54,33 @@ const Research_Interests_Cards = () => {
               style={{ backgroundColor: "rgb(156, 142, 136)" }}
             >
               <CardContent>
-                <Typography color="text.secondary" variant="h5" gutterBottom style={{ fontWeight: 600 }}>
+                <Typography
+                  color="text.secondary"
+                  variant="h5"
+                  gutterBottom
+                  style={{ fontWeight: 600 }}
+                >
                   {item.title}
                 </Typography>
-             
-                <Image
-                  width="200"
-                  src={IP + item.img}
-                  alt={item.img}
-                  key={item.id}
-                  className="Image"
-                />
+
+                {item.img.substr(-3) === "mp4" ? (
+                  <iframe
+                    src={IP + item.img}
+                    frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    width="85%"
+                  ></iframe>
+                ) : (
+                  <Image
+                    width="200"
+                    src={IP + item.img}
+                    alt={item.img}
+                    key={item.id}
+                    className="Image"
+                  />
+                )}
+
                 <style>{CardImg}</style>
                 <Box sx={{ pb: 5 }}>
                   <Typography

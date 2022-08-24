@@ -13,6 +13,9 @@ const CardSty = `
   .gird{
     margin:auto;
     justify-content: center;
+    padding-right:0px;
+    padding-left:0px;
+    
   }
 `;
 
@@ -24,6 +27,11 @@ const CardImg = `
 
 const ResearchContent = styled.div`
   padding-bottom: 3%;
+
+  @media (max-width: 550px){
+    padding-right:0px;
+    padding-left:0px;
+  }
 `;
 
 const Research_Interests_Cards = () => {

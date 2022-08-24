@@ -12,7 +12,7 @@ import "antd/dist/antd.min.css"
 
 const CardSty = `
   .gird{
- 
+    
     margin:auto;
     justify-content: center;
   

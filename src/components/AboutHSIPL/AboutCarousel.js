@@ -11,19 +11,26 @@ const CarouselContent = styled.div`
 `;
 
 const SliderCon = styled(Slider)`
-  width: 90%;
+  width: 80%;
   margin: auto;
-  margin-right: 5rem;
+
+
   .slick-prev:before {
     font-size: 3rem;
-
     margin: -1rem;
+    @media (max-width: 550px){
+      display:none;
+    }
   }
 
   .slick-next:before {
     color: white;
     font-size: 3rem;
+    margin: -1rem;
     text-justify: auto;
+    @media (max-width: 550px){
+      display:none;
+    }
   }
 `;
 const PicContent = styled.div``;

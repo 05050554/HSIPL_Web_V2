@@ -34,9 +34,6 @@ const DescribeSubTitleSpan = styled.span`
   white-space: nowrap;
   margin-right: 5%;
   margin-top: 0%;
-  @media (max-width: 900px) {
-    margin-right: 0%;
-  }
 `;
 
 const DescribeH3Title = styled.span`

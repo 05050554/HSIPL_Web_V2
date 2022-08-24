@@ -18,7 +18,6 @@ const SpanContain = styled.div`
   display: flex;
 
   flex-direction: column;
-  width: 35%;
   text-align: left;
 `;
 

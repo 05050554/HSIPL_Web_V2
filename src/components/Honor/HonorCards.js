@@ -67,7 +67,18 @@ const SliderHon = styled(Slider)`
     color: white;
     font-size: 3rem;
     color: black;
+    margin:-1rem;
+    @media (max-width: 550px){
+      display:none;
+    }
   }
+  .slick-prev:before {
+    
+    @media (max-width: 550px){
+      display:none;
+    }
+  }
+  
 `;
 
 const HonorCards = () => {

@@ -15,7 +15,7 @@ const HonorTitle = styled.h1`
 
 const Honor = () => {
   return (
-    <HonorContain>
+    <HonorContain id = "Awards">
     <HonorTitle>Honor and Awards</HonorTitle>
     <HonorCards/>
     </HonorContain>

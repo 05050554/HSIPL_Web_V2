@@ -13,6 +13,7 @@ const MulitiplePages = [
     name: "Lab Director",
     href: "Lab_Director",
     list: [
+      "Lab_Director",
       "Education",
       "Experience",
       "Publication",
@@ -123,7 +124,7 @@ const Navbar = () => {
                 <style>{DroupDown}</style>
                 {multiple.list.map((listName,index) => (
                   <li key={index}>
-                    <a class="dropdown-item ps-4 " href="#">
+                    <a class="dropdown-item ps-4 " href={"#"+listName}>
                       {listName}
                     </a>
                   </li>

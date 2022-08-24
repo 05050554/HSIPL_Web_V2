@@ -5,7 +5,6 @@ import About_Carousel from "./AboutCarousel";
 
 const AboutContain = styled.div`
   float: right;
-  // z-index: 3;
   color: white;
   text-align: center;
   padding-bottom: 7%;
@@ -14,6 +13,13 @@ const AboutContain = styled.div`
   letter-spacing: 0.2rem;
   transform: rotateZ(90deg);
   white-space: nowrap;
+  @media (max-width: 1400px){
+    transform: rotateZ(0deg);
+    text-align: center;
+    padding-top:5%;
+    padding-bottom: 3%;
+    width:100%;
+  }
 `;
 
 const VideoContent = styled.div`

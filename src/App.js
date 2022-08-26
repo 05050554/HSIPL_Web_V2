@@ -11,7 +11,12 @@ import LabDirector from "./components/LabDirector/LabDirector";
 import Research_Interests from "./components/Research_Interests/Research_Interests";
 import Members from "./components/Members/Members";
 import Footer from "./components/Footer";
+import Research_Posters from "./components/Research_Posters/Research_Posters";
+import ProfessorIntroView from "./components/ProfessorDetail/ProfessorIntroView";
+import GrantSupport from "./components/Grant_Support/GrantSupport";
 import { createGlobalStyle } from "styled-components";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 const GlobalStyles = createGlobalStyle`
 html{
   scroll-behavior: smooth;
@@ -23,18 +28,44 @@ function App() {
   return (
     <div className="App">
       <GlobalStyles />
-      {/* <Navbar></Navbar>
-     <Home></Home>
-      <About_HSIPL></About_HSIPL> */}
-      <Navbar></Navbar>
-      <Home />
-      <About_HSIPL />
-      <News />
-      <Honor />
-      <LabDirector />
-      <Research_Interests />
-      <Members />
-      <Footer />
+      <BrowserRouter>
+        <Routes path="/">
+          <Route
+            path="/"
+            element={
+              <>
+                <Navbar /> <Home /> <About_HSIPL />
+                <News />
+                <Honor />
+                <LabDirector />
+                <Research_Interests />
+                <Members />
+                <Footer />
+              </>
+            }
+          />
+        </Routes>
+        <Routes path="/LearnMore">
+          <Route
+            path="/LearnMore"
+            element={
+              <>
+                <Navbar /> <Research_Posters /> <GrantSupport /> <Footer />
+              </>
+            }
+          />
+        </Routes>
+        <Routes path="/ProfessorDetail">
+          <Route
+            path="/ProfessorDetail"
+            element={
+              <>
+                <Navbar /> <ProfessorIntroView /> <Footer />
+              </>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

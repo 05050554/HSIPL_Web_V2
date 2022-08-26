@@ -25,6 +25,7 @@ const LabDirContent = styled.div`
     display: grid;
   }
 `;
+export { LabDir, LabDirContent };
 
 const LabDirector = () => {
   return (

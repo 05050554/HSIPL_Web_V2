@@ -3,9 +3,9 @@ import styled from "styled-components";
 import logo from "../assets/images/LOGO_1.png";
 const pages = [
   { name: "Home", href: "/" },
-  { name: "About_HSIPL", href: "#About_HSIPL" },
-  { name: "News", href: "#News" },
-  { name: "Awards", href: "#Awards" },
+  { name: "About_HSIPL", href: "/#About_HSIPL" },
+  { name: "News", href: "/#News" },
+  { name: "Awards", href: "/#Awards" },
 ];
 
 const MulitiplePages = [
@@ -26,7 +26,11 @@ const MulitiplePages = [
   },
   { name: "Members", href: "Members", list: ["Senior", "Junior", "Alumnus"] },
   { name: "Research", href: "", list: ["Interests", "Posters", "Projects"] },
-  { name: "Equipment", href: "", list: ["Pushbroom", "SnapShot", "Protable"] },
+  {
+    name: "Equipment",
+    href: "",
+    list: ["Overview", "Pushbroom", "SnapShot", "Protable"],
+  },
 ];
 
 const PageContain = `
@@ -39,9 +43,11 @@ const PageContain = `
 const TextAndHover = `
   .navbar .navbar-nav .nav-link{
     color :white;
+   
 }
   .navbar .navbar-nav .nav-link:hover{
     color:orange;
+    
   }
 `;
 
@@ -49,6 +55,7 @@ const DroupDown = `
   .dropdown-item{
     color: white;
     text-align: center;
+    font-size:0.84rem;
 }
   .dropdown-item:hover {
     background-image: url(https://template101386.motopreview.com/mt-demo/101300/101386/mt-content/uploads/2020/05/mt-2019-bg-main.jpg);
@@ -57,13 +64,13 @@ const DroupDown = `
 `;
 
 const LogoImg = styled.img`
-  height: 10vh;
+  height: 7vh;
 `;
 
 const NavContain = `
   .navbar{
     background-image: url(https://template101386.motopreview.com/mt-demo/101300/101386/mt-content/uploads/2020/05/mt-2019-bg-main.jpg);
-   
+  font-size:0.84rem;
 }
  
 `;
@@ -83,13 +90,12 @@ const Navbar = () => {
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
-        
       >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ps-4">
-          {pages.map((page,index) => (
+          {pages.map((page, index) => (
             <li class="nav-item ps-3 " key={index}>
               <style>{TextAndHover}</style>
               <a
@@ -104,7 +110,7 @@ const Navbar = () => {
             </li>
           ))}
 
-          {MulitiplePages.map((multiple,index) => (
+          {MulitiplePages.map((multiple, index) => (
             <li class="nav-item dropdown px-3" key={index}>
               <a
                 class="nav-link dropdown-toggle text-white"
@@ -122,11 +128,17 @@ const Navbar = () => {
               >
                 <style>{PageContain}</style>
                 <style>{DroupDown}</style>
-                {multiple.list.map((listName,index) => (
+                {multiple.list.map((listName, index) => (
                   <li key={index}>
-                    <a class="dropdown-item ps-4 " href={"#"+listName}>
-                      {listName}
-                    </a>
+                    {listName === "Overview" ? (
+                      <a class="dropdown-item ps-4 " href="LearnMore">
+                        {listName}
+                      </a>
+                    ) : (
+                      <a class="dropdown-item ps-4 " href={"/#" + listName}>
+                        {listName}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>

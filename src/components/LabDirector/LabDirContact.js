@@ -62,7 +62,7 @@ const PhoneImg = styled.img`
   }
 `;
 
-const BtnMore = styled.div`
+const BtnMore = styled.a`
   flex: 1;
   width: fit-content;
   text-decoration: none;
@@ -100,7 +100,29 @@ const BtnMore = styled.div`
   }
 `;
 
-const LabDirContact = () => {
+export default function LabDirContact() {
+  return (
+    <>
+      <MailContact>
+        <MailImg src={Mail_img} alt="Mail_img"></MailImg>
+        <ContactSpan>sychen@yuntech.edu.tw</ContactSpan>
+      </MailContact>
+
+      <Phone>
+        <PhoneImg src={Call_img} />
+        <ContactContent>
+          (work) +886-5-5342601 ext 4514
+          <br></br>(lab) +886-5-5342601 ext 4598
+        </ContactContent>
+        <BtnMore href="/ProfessorDetail" rel="noopener noreferrer">
+          <span>More Info. → </span>
+        </BtnMore>
+      </Phone>
+    </>
+  );
+}
+
+export function LabDirContactDetail() {
   return (
     <>
       <MailContact>
@@ -115,15 +137,13 @@ const LabDirContact = () => {
           <br></br>(lab) +886-5-5342601 ext 4598
         </ContactContent>
         <BtnMore
-
-        //   to="/ProfessorDetail"
-        //   rel="noopener noreferrer"
+          href="https://scholar.google.com/citations?user=0LxRRawAAAAJ&hl=zh-TW"
+          rel="noopener noreferrer"
+          target="_blank"
         >
-          <span>More Info. → </span>
+          <span>Google Scholar</span>
         </BtnMore>
       </Phone>
     </>
   );
-};
-
-export default LabDirContact;
+}

@@ -13,8 +13,8 @@ const InterestsTitle = styled.h1`
 
 const Research_Interests = () => {
   return (
-    <InterestsContent>
-      <InterestsTitle>Research interests</InterestsTitle>
+    <InterestsContent id="Interests">
+      <InterestsTitle>Research Interests</InterestsTitle>
       <Research_Interests_Describe/>
       <Research_Interests_Cards/>
     </InterestsContent>

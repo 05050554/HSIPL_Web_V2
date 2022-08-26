@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import LabDirContact from "./LabDirContact";
+import { LabDirContactDetail } from "./LabDirContact";
 
 const DescribeContent = styled.div`
   display: grid;
@@ -59,7 +60,7 @@ const ResumeP = styled.p`
   font-size: 1.2rem;
 `;
 
-const LabDirDescribe = () => {
+export default function LabDirDescribe() {
   return (
     <DescribeContent>
       <DescribeSubTitle>
@@ -85,6 +86,35 @@ const LabDirDescribe = () => {
       </ResumeCon>
     </DescribeContent>
   );
+}
+
+export const LabDirDescribeDetail = () => {
+  return (
+    <DescribeContent>
+      <DescribeSubTitle>
+        <DescribeSubTitleSpan>Associate Professor</DescribeSubTitleSpan>
+        <DescribeSubTitleSpan>Chen, Shih-Yu 陳士煜</DescribeSubTitleSpan>
+      </DescribeSubTitle>
+      <DescribeH3Title>
+        Department of Computer Science and Information Engineering
+      </DescribeH3Title>
+      <DescribeH3Title>
+        National Yunlin University of Science and Technology
+      </DescribeH3Title>
+
+      <ResumeCon>
+        <ResumeP>
+          成立 SPIE National Yuntech Univ. Chapter 分會並擔任指導老師
+        </ResumeP>
+        <ResumeP>
+          成立雲科大高光譜遙測工程科技中心，並聘請遙測領域學術大師 Chien-I Chang
+          擔任講座教授與主持人共同領導研究團隊發展高光譜遙測技術
+        </ResumeP>
+      </ResumeCon>
+
+      <LabDirContactDetail />
+    </DescribeContent>
+  );
 };
 
-export default LabDirDescribe;
+// export {LabDirDescribe,LabDirDescribeDetail};

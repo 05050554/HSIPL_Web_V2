@@ -28,12 +28,12 @@ const Members = () => {
     <>
       <MembersContain>
         <Title>Current Master Students</Title>
-        <SubTitle>Senior Students</SubTitle>
+        <SubTitle id="Senior">Senior Students</SubTitle>
         <MembersCards tag="senior" />
-        <SubTitle>Junior Students</SubTitle>
+        <SubTitle id="Junior">Junior Students</SubTitle>
         <MembersCards tag="junior" />
         <Title>Alumnus</Title>
-        <SubTitle>M.S. Graduates</SubTitle>
+        <SubTitle id="Alumnus">M.S. Graduates</SubTitle>
         <MembersCards tag="alumnus" />
       </MembersContain>
     </>

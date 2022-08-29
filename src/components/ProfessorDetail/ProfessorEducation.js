@@ -1,6 +1,5 @@
 import React from "react";
-import GrantTable from "../GetTableData";
-
+import { ProfessorEdu } from "../GetTableData";
 import {
   AllContain,
   HeaderTitleContain,
@@ -8,18 +7,18 @@ import {
   TitleANDContain,
 } from "../StyledGlobale";
 import Divider from '@mui/material/Divider';
-const GrantSupport = () => {
+const ProfessorEducation = () => {
   return (
-    <AllContain>
+    <AllContain id = "Education">
       <HeaderTitleContain>
-        <HeaderTitle>Grant Support and Projects</HeaderTitle>
+        <HeaderTitle>Education</HeaderTitle>
         <Divider  sx={{ bgcolor: "black" }}/>
       </HeaderTitleContain>
       <TitleANDContain>
-        <GrantTable />
+        <ProfessorEdu />
       </TitleANDContain>
     </AllContain>
   );
 };
 
-export default GrantSupport;
+export default ProfessorEducation;

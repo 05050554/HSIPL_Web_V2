@@ -14,6 +14,7 @@ import Footer from "./components/Footer";
 import Research_Posters from "./components/Research_Posters/Research_Posters";
 import ProfessorIntroView from "./components/ProfessorDetail/ProfessorIntroView";
 import GrantSupport from "./components/Grant_Support/GrantSupport";
+import Equipment from "./components/Equipment/Equipment";
 import { createGlobalStyle } from "styled-components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -50,7 +51,7 @@ function App() {
             path="/LearnMore"
             element={
               <>
-                <Navbar /> <Research_Posters /> <GrantSupport /> <Footer />
+                <Navbar /> <Research_Posters /> <GrantSupport /> <Equipment/> <Footer />
               </>
             }
           />
@@ -60,7 +61,7 @@ function App() {
             path="/ProfessorDetail"
             element={
               <>
-                <Navbar /> <ProfessorIntroView /> <Footer />
+                <Navbar /> <ProfessorIntroView />  <Footer />
               </>
             }
           />

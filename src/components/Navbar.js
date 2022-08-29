@@ -131,7 +131,87 @@ const Navbar = () => {
                 {multiple.list.map((listName, index) => (
                   <li key={index}>
                     {listName === "Overview" ? (
-                      <a class="dropdown-item ps-4 " href="LearnMore">
+                      <a
+                        class="dropdown-item ps-4 "
+                        href={"LearnMore#" + listName}
+                      >
+                        {listName}
+                      </a>
+                    ) : listName === "Pushbroom" ? (
+                      <a
+                        class="dropdown-item ps-4 "
+                        href={"LearnMore#" + listName}
+                      >
+                        {listName}
+                      </a>
+                    ) : listName === "SnapShot" ? (
+                      <a
+                        class="dropdown-item ps-4 "
+                        href={"LearnMore#" + listName}
+                      >
+                        {listName}
+                      </a>
+                    ) : listName === "Protable" ? (
+                      <a
+                        class="dropdown-item ps-4 "
+                        href={"LearnMore#" + listName}
+                      >
+                        {listName}
+                      </a>
+                    ) : listName === "Education" ? (
+                      <a
+                        class="dropdown-item ps-4 "
+                        href={"ProfessorDetail#" + listName}
+                      >
+                        {listName}
+                      </a>
+                    ) : listName === "Experience" ? (
+                      <a
+                        class="dropdown-item ps-4 "
+                        href={"ProfessorDetail#" + listName}
+                      >
+                        {listName}
+                      </a>
+                    ) : listName === "Publication" ? (
+                      <a
+                        class="dropdown-item ps-4 "
+                        href={"ProfessorDetail#" + listName}
+                      >
+                        {listName}
+                      </a>
+                    ) : listName === "Talks" ? (
+                      <a
+                        class="dropdown-item ps-4 "
+                        href={"ProfessorDetail#" + listName}
+                      >
+                        {listName}
+                      </a>
+                    ) : listName === "Service" ? (
+                      <a
+                        class="dropdown-item ps-4 "
+                        href={"ProfessorDetail#" + listName}
+                      >
+                        {listName}
+                      </a>
+                    ) : listName === "Conference" ? (
+                      <a
+                        class="dropdown-item ps-4 "
+                        href={"ProfessorDetail#" + listName}
+                      >
+                        {listName}
+                      </a>
+                    ) : listName === "Awards" ? (
+                      <a
+                        class="dropdown-item ps-4 "
+                        href={"ProfessorDetail#" + listName}
+                      >
+                        {listName}
+                      </a>
+                    ) : listName === "Google" ? (
+                      <a
+                        class="dropdown-item ps-4 "
+                        href="https://scholar.google.com/citations?user=0LxRRawAAAAJ&hl=zh-TW"
+                      >
                         {listName}
                       </a>
                     ) : (

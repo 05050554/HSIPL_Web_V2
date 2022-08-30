@@ -6,6 +6,7 @@ import {
     TitleANDContain,
   } from "../StyledGlobale";
   import Divider from '@mui/material/Divider';
+  import { ServiceTag } from '../GetTableData';
 const ProfessorService = () => {
   return (
     <AllContain id="Service">
@@ -14,7 +15,7 @@ const ProfessorService = () => {
       <Divider   sx={{ bgcolor: "black" }}/>
     </HeaderTitleContain>
     <TitleANDContain>
-      {/* <JournalArt /> */}
+      <ServiceTag />
     </TitleANDContain>
   </AllContain>
   )

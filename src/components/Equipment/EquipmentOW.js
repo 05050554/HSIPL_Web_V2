@@ -3,6 +3,7 @@ import React,{useEffect,useState} from 'react'
 import axios from 'axios';
 
 import styled from 'styled-components';
+import Tooltip from '@mui/material/Tooltip';
 
 const EqContain= styled.div`
 
@@ -43,11 +44,13 @@ const EquipmentOW = () => {
   return (
    <EqContain>
     {arrayData.map((item, index) => (
+        <Tooltip title={item.title}>
    <ImgBox>
-        <a href="#Pushbroom">
+        <a href={"#"+item.tag}>
           <Img src={IP+item.img}></Img>
         </a>
         </ImgBox>
+        </Tooltip>
     ))}
    </EqContain>
   )

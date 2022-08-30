@@ -5,7 +5,7 @@ const AllContain = styled.div`
   font-size: 3rem;
   text-align: left;
   margin-left: 3%;
-  padding-top: 5%;
+  padding-top: 7%;
 `;
 
 const HeaderTitleContain = styled.div`
@@ -19,6 +19,7 @@ const HeaderTitle = styled.h1``;
 
 const TitleANDContain = styled.div`
  padding: 3%;
+//  padding-top:5%;
 `
 
 export { AllContain,HeaderTitleContain, HeaderTitle,TitleANDContain };

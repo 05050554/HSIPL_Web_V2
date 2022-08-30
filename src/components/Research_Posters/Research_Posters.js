@@ -1,7 +1,7 @@
 import React from "react";
 import Research_Item from "./Research_Item";
 import styled from "styled-components";
-
+import { ButtonTop } from "../HomePage/Home";
 const PosterContain = styled.div`
   padding-top: 5%;
   background-color: #2d3a4b;
@@ -18,17 +18,22 @@ const PosterTitleDiv = styled.div`
   color: white;
 `;
 
+
 const PosterTitle = styled.h1`
   color:white;
 `
 
 const Research_Posters = () => {
+  const handleClick =()=>{
+    window.scrollTo(0, 0)
+  }
   return (
     <PosterContain>
       <PosterTitleDiv>
        <PosterTitle> Research Posters</PosterTitle>
         </PosterTitleDiv>
       <Research_Item />
+      <ButtonTop onClick={handleClick}>TOP</ButtonTop>
     </PosterContain>
   );
 };

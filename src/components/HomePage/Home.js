@@ -39,9 +39,24 @@ const ImgContain = styled.div`
   }
 `;
 
-
-
+const ButtonTop = styled.button`
+position: fixed;
+bottom: 0;
+right: 0;
+margin-right:3%;
+margin-bottom:2%;
+z-index:10;
+background-color: #204091;
+color:white;
+height: 3rem;
+width: 3rem;
+border-radius: 50%;
+`
+export {ButtonTop}
 const Home = () => {
+  const handleClick =()=>{
+    window.scrollTo(0, 0)
+  }
   return (
     <HomeContain id="Home">
       <HomeTitle>
@@ -53,6 +68,7 @@ const Home = () => {
           <HomePic src={HomePageImg}></HomePic>
         </ImgContain>
       </GridContain>
+      <ButtonTop onClick={handleClick}>TOP</ButtonTop>
     </HomeContain>
   );
 };

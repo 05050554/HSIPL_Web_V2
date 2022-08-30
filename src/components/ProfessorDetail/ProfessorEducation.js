@@ -6,18 +6,25 @@ import {
   HeaderTitle,
   TitleANDContain,
 } from "../StyledGlobale";
-import Divider from '@mui/material/Divider';
+import { ButtonTop } from "../HomePage/Home";
+import Divider from "@mui/material/Divider";
 const ProfessorEducation = () => {
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
   return (
-    <AllContain id = "Education">
-      <HeaderTitleContain>
-        <HeaderTitle>Education</HeaderTitle>
-        <Divider  sx={{ bgcolor: "black" }}/>
-      </HeaderTitleContain>
-      <TitleANDContain>
-        <ProfessorEdu />
-      </TitleANDContain>
-    </AllContain>
+    <>
+      <AllContain id="Education">
+        <HeaderTitleContain>
+          <HeaderTitle>Education</HeaderTitle>
+          <Divider sx={{ bgcolor: "black" }} />
+        </HeaderTitleContain>
+        <TitleANDContain>
+          <ProfessorEdu />
+        </TitleANDContain>
+      </AllContain>
+      <ButtonTop onClick={handleClick}>TOP</ButtonTop>
+    </>
   );
 };
 

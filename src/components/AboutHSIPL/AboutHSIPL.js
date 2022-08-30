@@ -13,17 +13,25 @@ const AboutContain = styled.div`
   letter-spacing: 0.2rem;
   transform: rotateZ(90deg);
   white-space: nowrap;
-  @media (max-width: 1400px){
+  @media (max-width: 1400px) {
     transform: rotateZ(0deg);
     text-align: center;
-    padding-top:5%;
+    padding-top: 5%;
     padding-bottom: 3%;
-    width:100%;
+    width: 100%;
   }
 `;
 
 const VideoContent = styled.div`
   padding-top: 3rem;
+  padding-left: 10rem;
+  // margin-left:3rem;
+  width: 100%;
+  margin: auto;
+  background-image: url(https://template101386.motopreview.com/mt-demo/101300/101386/mt-content/uploads/2020/05/mt-2019-bg-main.jpg);
+`;
+
+const VideoContent2 = styled.div`
   background-image: url(https://template101386.motopreview.com/mt-demo/101300/101386/mt-content/uploads/2020/05/mt-2019-bg-main.jpg);
 `;
 
@@ -69,8 +77,10 @@ const About_HSIPL = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
-        <VedioDescribe>{Text.VedioContent}</VedioDescribe>
       </VideoContent>
+      <VideoContent2>
+        <VedioDescribe>{Text.VedioContent}</VedioDescribe>
+      </VideoContent2>
 
       <div class="text-center p-3">
         <style>{FooterContent}</style>

@@ -31,7 +31,7 @@ const ProfImage = styled.img`
 
 const LabDirAvatar = () => {
   return (
-    <LabAvatarContent id="Lab_Director">
+    <LabAvatarContent>
       <LabTitle>Lab Director</LabTitle>
       <ProfImage src={Professor_img}></ProfImage>
     </LabAvatarContent>

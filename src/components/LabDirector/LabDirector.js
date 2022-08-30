@@ -29,7 +29,7 @@ export { LabDir, LabDirContent };
 
 const LabDirector = () => {
   return (
-    <LabDir>
+    <LabDir id="Lab_Director">
       <LabDirContent>
         <LabDirAvatar />
         <LabDirDescribe />

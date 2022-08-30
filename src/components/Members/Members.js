@@ -12,6 +12,7 @@ const Title = styled.h1`
   // font-size: 3rem;
   text-align: left;
   margin: 0% 5%;
+  padding-top:5%;
 `;
 
 const SubTitle = styled.h2`
@@ -20,7 +21,8 @@ const SubTitle = styled.h2`
   color: black;
   border-bottom: solid 2px rgb(0, 47, 122);
   margin-bottom: 0;
-  padding: 2% 0% 0% 0%;
+  padding: 6% 0% 0% 0%;
+
 `;
 
 const Members = () => {

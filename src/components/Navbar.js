@@ -210,6 +210,7 @@ const Navbar = () => {
                     ) : listName === "Google" ? (
                       <a
                         class="dropdown-item ps-4 "
+                        target="_blank"
                         href="https://scholar.google.com/citations?user=0LxRRawAAAAJ&hl=zh-TW"
                       >
                         {listName}

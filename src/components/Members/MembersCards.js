@@ -16,6 +16,10 @@ const SliderMem = styled(Slider)`
   margin: auto;
   margin-right: 5rem;
   padding-top: 3%;
+  .slick-list{
+    padding-left:3rem;
+    padding-right:3rem;
+  }
   .slick-prev:before {
     font-size: 3rem;
     color: black;
@@ -97,7 +101,7 @@ const MembersCards = (props) => {
         {arrayData
           .filter((identity) => identity.tag === props.tag)
           .map((filterMembers, index) => (
-            <Card sx={{ maxWidth: 300 }} key={index}>
+            <Card sx={{ maxWidth: 300 }} key={index} >
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -105,7 +109,7 @@ const MembersCards = (props) => {
                   image={IP + filterMembers.img}
                   alt={filterMembers.img}
                 />
-                <CardContent>
+                <CardContent style={{textAlign:"center"}}>
                   <Typography gutterBottom variant="h5" component="div">
                     {filterMembers.name}
                   </Typography>
@@ -114,7 +118,7 @@ const MembersCards = (props) => {
                     color="text.secondary"
                     sx={{ pt: 2 }}
                   >
-                    {filterMembers.researchDirection}
+                    研究方向: {filterMembers.researchDirection}
                   </Typography>
                   {props.tag === "alumnus" ? (
                     <Typography

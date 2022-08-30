@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const HonorContain = styled.div`
   background-color: #f5f7f8;
   padding-bottom:3%;
+  padding-top: 3%;
 `;
 const HonorTitle = styled.h1`
   padding-top: 3%;

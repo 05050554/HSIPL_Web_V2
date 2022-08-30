@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import About_HSIPL from "./components/AboutHSIPL/AboutHSIPL";
@@ -27,7 +26,7 @@ html{
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <GlobalStyles />
       <BrowserRouter>
         <Routes path="/">

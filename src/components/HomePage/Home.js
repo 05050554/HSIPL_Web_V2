@@ -12,6 +12,7 @@ const HomeTitle = styled.h1`
   font-family: Oswald;
   color: white;
   letter-spacing: 0.02em;
+  text-align:center;
 `;
 
 const GridContain = styled.div`
@@ -51,6 +52,10 @@ color:white;
 height: 3rem;
 width: 3rem;
 border-radius: 50%;
+&:hover{
+  color:yellow;
+  background-color: #2de3e3;
+}
 `
 export {ButtonTop}
 const Home = () => {

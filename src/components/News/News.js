@@ -3,6 +3,7 @@ import styled from "styled-components";
 import News_Cards from "./NewsCards";
 const NewsContain = styled.div`
   background-color: #f5f7f8;
+  padding-top: 3%;
 `;
 const NewsTitle = styled.h1`
   padding-top: 3%;

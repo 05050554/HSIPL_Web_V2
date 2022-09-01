@@ -12,46 +12,7 @@ import Grid from "@mui/material/Unstable_Grid2";
 import { Image } from "antd";
 import "antd/dist/antd.min.css";
 
-import winning from "../../img/Honor/2015-1105.jpg";
 
-const data = [
-  {
-    date: "2022-06/01",
-    img: winning,
-    content:
-      "本實驗室團隊 與 五鈴光學股份有限公司 合作開發即時生咖啡豆瑕疵檢測機台  榮獲2021 香港國際發明展 金牌",
-  },
-  {
-    date: "2022-06/01",
-    img: winning,
-    content:
-      "本實驗室團隊 與 五鈴光學股份有限公司 合作開發即時生咖啡豆瑕疵檢測機台  榮獲2021 香港國際發明展 金牌",
-  },
-  {
-    date: "2022-06/01",
-    img: winning,
-    content:
-      "本實驗室團隊 與 五鈴光學股份有限公司 合作開發即時生咖啡豆瑕疵檢測機台  榮獲2021 香港國際發明展 金牌",
-  },
-  {
-    date: "2022-06/01",
-    img: winning,
-    content:
-      "本實驗室團隊 與 五鈴光學股份有限公司 合作開發即時生咖啡豆瑕疵檢測機台  榮獲2021 香港國際發明展 金牌",
-  },
-  {
-    date: "2022-06/01",
-    img: winning,
-    content:
-      "本實驗室團隊 與 五鈴光學股份有限公司 合作開發即時生咖啡豆瑕疵檢測機台  榮獲2021 香港國際發明展 金牌",
-  },
-  {
-    date: "2022-06/01",
-    img: winning,
-    content:
-      "本實驗室團隊 與 五鈴光學股份有限公司 合作開發即時生咖啡豆瑕疵檢測機台  榮獲2021 香港國際發明展 金牌",
-  },
-];
 
 const SliderHon = styled(Slider)`
   width: 85%;
@@ -137,7 +98,7 @@ const HonorCards = () => {
               style={{ backgroundColor: "#e0eeea" }}
             >
               <CardContent>
-                <Typography color="text.secondary" variant="h5" gutterBottom>
+                <Typography color="text.secondary" variant="h5" gutterBottom style={{textAlign:"center"}}>
                   {item.date}
                 </Typography>
 

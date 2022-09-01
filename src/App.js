@@ -14,9 +14,11 @@ import Research_Posters from "./components/Research_Posters/Research_Posters";
 import ProfessorIntroView from "./components/ProfessorDetail/ProfessorIntroView";
 import GrantSupport from "./components/Grant_Support/GrantSupport";
 import Equipment from "./components/Equipment/Equipment";
+import Login from "./components/Login/Login";
 import { createGlobalStyle } from "styled-components";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { BrowserRouter, Routes, Route, Redirect } from "react-router-dom";
+import PrivateRoute from "./components/Login/PrivateRoute";
+import Edit from "./components/Edit/Edit";
 const GlobalStyles = createGlobalStyle`
 html{
   scroll-behavior: smooth;
@@ -25,8 +27,13 @@ html{
 `;
 
 function App() {
+  const PreivateContain = [
+    { path: "/Edit", component: Edit },
+    // { path: "/home", component: Home },
+  ];
+
   return (
-    <div >
+    <div>
       <GlobalStyles />
       <BrowserRouter>
         <Routes path="/">
@@ -50,7 +57,8 @@ function App() {
             path="/LearnMore"
             element={
               <>
-                <Navbar /> <Research_Posters /> <GrantSupport /> <Equipment/> <Footer />
+                <Navbar /> <Research_Posters /> <GrantSupport /> <Equipment />{" "}
+                <Footer />
               </>
             }
           />
@@ -60,10 +68,14 @@ function App() {
             path="/ProfessorDetail"
             element={
               <>
-                <Navbar /> <ProfessorIntroView />  <Footer />
+                <Navbar /> <ProfessorIntroView /> <Footer />
               </>
             }
           />
+        </Routes>
+        <Routes path="/Login">
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Edit" element={<PrivateRoute />} />
         </Routes>
       </BrowserRouter>
     </div>

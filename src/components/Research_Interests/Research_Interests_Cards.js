@@ -66,7 +66,8 @@ const Research_Interests_Cards = () => {
                   color="text.secondary"
                   variant="h5"
                   gutterBottom
-                  style={{ fontWeight: 600 }}
+                  style={{ fontWeight: 600,textAlign:"center" }}
+                 
                 >
                   {item.title}
                 </Typography>

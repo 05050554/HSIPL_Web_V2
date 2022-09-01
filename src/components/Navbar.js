@@ -1,3 +1,4 @@
+import { textAlign } from "@mui/system";
 import React from "react";
 import styled from "styled-components";
 import logo from "../assets/images/LOGO_1.png";
@@ -72,7 +73,15 @@ const NavContain = `
     background-image: url(https://template101386.motopreview.com/mt-demo/101300/101386/mt-content/uploads/2020/05/mt-2019-bg-main.jpg);
   font-size:0.84rem;
 }
- 
+`;
+
+const LoginA = styled.a`
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: orange;
+  }
 `;
 
 const Navbar = () => {
@@ -225,6 +234,18 @@ const Navbar = () => {
               </ul>
             </li>
           ))}
+          <li class="nav-item ps-3 " key="30">
+            <style>{TextAndHover}</style>
+            <a
+              activeClass="active"
+              smooth={true}
+              class="nav-item nav-link "
+              href="/Login"
+              isDynamic={true}
+            >
+              Login
+            </a>
+          </li>
         </ul>
       </div>
     </nav>

@@ -47,8 +47,8 @@ const News_Cards = () => {
               sx={{ width: 300, height: 650 }}
               style={{ backgroundColor: "silver" }}
             >
-              <CardContent>
-                <Typography color="text.secondary" variant="h5" gutterBottom>
+              <CardContent >
+                <Typography color="text.secondary" variant="h5" gutterBottom style={{textAlign:"center"}}>
                   {item.date}
                 </Typography>
 

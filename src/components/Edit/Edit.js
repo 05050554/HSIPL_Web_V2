@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Box from "@mui/material/Box";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
@@ -9,6 +8,7 @@ import { HeaderTitle } from "../StyledGlobale";
 import Button from "@mui/material/Button";
 import EditRender from "./EditRender";
 import { useNavigate } from "react-router";
+import LogoutIcon from "@mui/icons-material/Logout";
 const item = [
   { name: "Photos of life", value: "1" },
   { name: "News", value: "2" },
@@ -33,7 +33,6 @@ const EditCon = styled.div`
   font-family: Signika, sans-serif;
   font-size: 3rem;
   text-align: center;
-  margin-left: 3%;
   padding-top: 3%;
 `;
 
@@ -41,7 +40,6 @@ const HeaderCon = styled.div`
   font-family: Signika, sans-serif;
   font-size: 3rem;
   text-align: center;
-  margin-left: 3%;
   padding-bottom: 3%;
 `;
 
@@ -51,23 +49,25 @@ const Edit = () => {
   const [getSelect, setGetSelect] = useState("");
   const handleChange = (e) => {
     setGetSelect(e.target.value);
-
   };
   let navigate = useNavigate();
 
-  const handleLogout =()=>{
-    localStorage.clear()
+  const handleLogout = () => {
+    localStorage.clear();
     navigate("/Login");
-
-  }
+  };
 
   return (
     <>
       <EditCon>
         <HeaderCon>
           <HeaderTitle>Hello, HSIPL Web Administrator!</HeaderTitle>
+          <Button variant="contained" onClick={handleLogout}>
+            <LogoutIcon />
+            Logout
+          </Button>
         </HeaderCon>
-        <Button onClick={handleLogout}>Logout</Button>
+
         <FormControl variant="standard" sx={{ m: 1, minWidth: 200 }}>
           <InputLabel>請選擇欲採取動作之資料</InputLabel>
           <Select onChange={handleChange} autoWidth>

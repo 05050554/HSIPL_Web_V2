@@ -11,7 +11,6 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import Tooltip from "@mui/material/Tooltip";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import {
-  TextField,
   DialogTitle,
   Dialog,
   DialogActions,
@@ -157,17 +156,13 @@ export function About_Carousel_Edit() {
     event_api();
   }, []);
 
-  const handleEdit = (item) => {
-    console.log(item);
-  };
+
   const [newOpen, setNewOpen] = useState(false);
   const [editOpen, setEditOpen] = useState(false);
   const [deleteOpen, setDeleteOpen] = useState(false);
   const [currentValue, setCurrentValue] = useState("");
   const [newInfo, setNewInfo] = useState([]);
-  const [editInfo, setEditInfo] = useState({
-    id: "",
-  });
+
   const [image, setImage] = useState(null);
 
   const handleNewClickOpen = () => {
@@ -192,26 +187,45 @@ export function About_Carousel_Edit() {
     setImage(URL.createObjectURL(e.target.files[0]));
     setNewInfo((preData) => ({
       ...preData,
-      ["image"]: e.target.files[0],
+      "image": e.target.files[0],
     }));
     console.log(newInfo);
   };
 
   const handleEditClickOpen = (item) => {
     setEditOpen(true);
-    setCurrentValue({ ["id"]: item.id, ["img"]: item.img });
+    setCurrentValue({ "id": item.id, "img": item.img });
   };
   const handleEditClose = () => {
     setEditOpen(false);
   };
 
+  const handleEditSubmit = async () => {
+    const formData = new FormData();
+    formData.append("img", newInfo.image);
+
+    try {
+      await axios.put(event_url+ "/" + currentValue.id, formData, config);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
 
   const handleDeleteClickOpen = (item) => {
     setDeleteOpen(true);
-    setCurrentValue({ ["id"]: item.id, ["img"]: item.img });
+    setCurrentValue({ "id": item.id, "img": item.img });
   };
   const handleDeleteClose = () => {
     setDeleteOpen(false);
+  };
+
+  const handleDeleteSubmit = async () => {
+    try {
+      await axios.delete(event_url+ "/" + currentValue.id, config);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -277,7 +291,7 @@ export function About_Carousel_Edit() {
                     type="file"
                     onChange={onImageChange}
                   />
-                  <img width="200#" src={image} />
+                  <img width="200#" src={image} alt={image} />
                 </DialogContent>
                 <DialogActions>
                   <Button onClick={handleNewClose}>取消</Button>
@@ -301,7 +315,7 @@ export function About_Carousel_Edit() {
                 {"修改資訊"}
               </DialogTitle>
 
-              <form>
+              <form onSubmit={handleEditSubmit}>
                 <DialogContent style={{ textAlign: "center" }}>
                   <Img src={IP + currentValue.img} alt={index} key={item.id} />
                   <UploadImgButton
@@ -311,7 +325,7 @@ export function About_Carousel_Edit() {
                     type="file"
                     onChange={onImageChange}
                   />
-                  <img width="200#" src={image} />
+                  <img width="200#" src={image} alt={image}/>
                 </DialogContent>
                 <DialogActions>
                   <Button onClick={handleEditClose}>取消</Button>
@@ -336,7 +350,7 @@ export function About_Carousel_Edit() {
                 {"刪除資訊"}
               </DialogTitle>
 
-              <form>
+              <form onSubmit={handleDeleteSubmit}>
                 <DialogContent>
                   <List aria-label="mailbox folders">
                     <ListItem button>

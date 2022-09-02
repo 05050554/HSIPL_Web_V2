@@ -1,11 +1,11 @@
 import React from "react";
-import { ResearchEXP } from "../GetTableData";
+import { ResearchEXP } from "../ToolBox/GetTableData";
 import {
   AllContain,
   HeaderTitleContain,
   HeaderTitle,
   TitleANDContain,
-} from "../StyledGlobale";
+} from "../ToolBox/StyledGlobale";
 import Divider from '@mui/material/Divider';
 const PorfessorResearch = () => {
   return (

@@ -1,11 +1,11 @@
 import React from "react";
-import { ProfessorEdu } from "../GetTableData";
+import { ProfessorEdu } from "../ToolBox/GetTableData";
 import {
   AllContain,
   HeaderTitleContain,
   HeaderTitle,
   TitleANDContain,
-} from "../StyledGlobale";
+} from "../ToolBox/StyledGlobale";
 import { ButtonTop } from "../HomePage/Home";
 import Divider from "@mui/material/Divider";
 const ProfessorEducation = () => {

@@ -4,7 +4,7 @@ import {
     HeaderTitleContain,
     HeaderTitle,
     TitleANDContain,
-  } from "../StyledGlobale";
+  } from "../ToolBox/StyledGlobale";
 import { ImgContain,SubTitle } from './Pushbloom';
 import Divider from "@mui/material/Divider";
 import { Image } from "antd";

@@ -4,7 +4,7 @@ import {
   HeaderTitleContain,
   HeaderTitle,
   TitleANDContain,
-} from "../StyledGlobale";
+} from "../ToolBox/StyledGlobale";
 import Divider from "@mui/material/Divider";
 import styled from "styled-components";
 import FX10 from "../../img/Equipments/FX10-1.png";

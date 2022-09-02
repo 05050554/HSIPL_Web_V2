@@ -1,11 +1,11 @@
 import React from 'react'
-import { Conference } from '../GetTableData'
+import { Conference } from '../ToolBox/GetTableData'
 import {
     AllContain,
     HeaderTitleContain,
     HeaderTitle,
     TitleANDContain,
-  } from "../StyledGlobale";
+  } from "../ToolBox/StyledGlobale";
   import Divider from '@mui/material/Divider';
 const ProfessorConference = () => {
   return (

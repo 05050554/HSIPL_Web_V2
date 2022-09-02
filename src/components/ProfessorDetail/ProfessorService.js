@@ -4,9 +4,9 @@ import {
     HeaderTitleContain,
     HeaderTitle,
     TitleANDContain,
-  } from "../StyledGlobale";
+  } from "../ToolBox/StyledGlobale";
   import Divider from '@mui/material/Divider';
-  import { ServiceTag } from '../GetTableData';
+  import { ServiceTag } from '../ToolBox/GetTableData';
 const ProfessorService = () => {
   return (
     <AllContain id="Service">

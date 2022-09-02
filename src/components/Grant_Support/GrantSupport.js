@@ -1,12 +1,12 @@
 import React from "react";
-import GrantTable from "../GetTableData";
+import GrantTable from "../ToolBox/GetTableData";
 
 import {
   AllContain,
   HeaderTitleContain,
   HeaderTitle,
   TitleANDContain,
-} from "../StyledGlobale";
+} from "../ToolBox/StyledGlobale";
 import Divider from '@mui/material/Divider';
 const GrantSupport = () => {
   return (

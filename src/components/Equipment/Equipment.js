@@ -5,7 +5,7 @@ import {
   HeaderTitleContain,
   HeaderTitle,
   TitleANDContain,
-} from "../StyledGlobale";
+} from "../ToolBox/StyledGlobale";
 
 import Pushbloom from "./Pushbloom";
 import SnapShot from "./SnapShot";

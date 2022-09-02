@@ -4,7 +4,7 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import styled from "styled-components";
-import { HeaderTitle } from "../StyledGlobale";
+import { HeaderTitle } from "../ToolBox/StyledGlobale";
 import Button from "@mui/material/Button";
 import EditRender from "./EditRender";
 import { useNavigate } from "react-router";
@@ -49,6 +49,7 @@ const Edit = () => {
   const [getSelect, setGetSelect] = useState("");
   const handleChange = (e) => {
     setGetSelect(e.target.value);
+
   };
   let navigate = useNavigate();
 

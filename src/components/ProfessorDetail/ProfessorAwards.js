@@ -1,11 +1,11 @@
 import React from 'react'
-import { ProfessorAward } from '../GetTableData'
+import { ProfessorAward } from '../ToolBox/GetTableData'
 import {
     AllContain,
     HeaderTitleContain,
     HeaderTitle,
     TitleANDContain,
-  } from "../StyledGlobale";
+  } from "../ToolBox/StyledGlobale";
   import Divider from '@mui/material/Divider';
 const ProfessorAwards = () => {
   return (

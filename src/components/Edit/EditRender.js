@@ -4,6 +4,7 @@ import { EditCon } from "./Edit";
 import { AboutCarouselEdit } from "../AboutHSIPL/AboutCarousel";
 import { NewsCardsEdit } from "../News/NewsCards";
 import { HonorCardsEdit } from "../Honor/HonorCards";
+import { ResearchInterestsEdit } from "../Research_Interests/Research_Interests_Cards";
 const EditRender = (props) => {
   return (
     <EditCon>
@@ -13,6 +14,8 @@ const EditRender = (props) => {
         <NewsCardsEdit />
       ) : props.select === "3" ? (
         <HonorCardsEdit />
+      ) : props.select === "4" ? (
+        <ResearchInterestsEdit />
       ) : null}
     </EditCon>
   );

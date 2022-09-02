@@ -49,7 +49,7 @@ export const AddNewsDialog = (props) => {
             type="file"
             onChange={props.actionImg}
           />
-          <img width="200#" src={props.image} alt={props.image} />
+          <img width="200#" src={props.image} alt={props.image}  style={{paddingTop:30,paddingBottom:30}} />
           <TextField
             onChange={props.actionInfoChange}
             value={props.content}

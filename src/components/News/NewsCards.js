@@ -165,7 +165,7 @@ export function NewsCardsEdit() {
 
   const handleEditSubmit = async () => {
     const formData = new FormData();
-  
+
     if (newInfo.date) {
       formData.append("date", newInfo.date);
     } else {
@@ -273,21 +273,21 @@ export function NewsCardsEdit() {
                 number={item.id}
               />
               <DeleteBtn action={() => handleDeleteClickOpen(item)} />
-               {/*Delete dialog*/}
-            <DeleteNewsDialog
-              actionOpen={deleteOpen}
-              actionClose={handleDeleteClose}
-              titleName="刪除資訊"
-              actionSubmit={handleDeleteSubmit}
-              actionImg={onImageChange}
-              image={image}
-              IP={IP}
-              currentImg={currentValue.img}
-              currentDate={currentValue.date}
-              currentContent={currentValue.content}
-              currentID={currentValue.id}
-              number={item.id}
-            />
+              {/*Delete dialog*/}
+              <DeleteNewsDialog
+                actionOpen={deleteOpen}
+                actionClose={handleDeleteClose}
+                titleName="刪除資訊"
+                actionSubmit={handleDeleteSubmit}
+                actionImg={onImageChange}
+                image={image}
+                IP={IP}
+                currentImg={currentValue.img}
+                currentDate={currentValue.date}
+                currentContent={currentValue.content}
+                currentID={currentValue.id}
+                number={item.id}
+              />
             </Grid>
           ))}
         </Grid>

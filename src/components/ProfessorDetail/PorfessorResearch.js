@@ -22,3 +22,20 @@ const PorfessorResearch = () => {
 };
 
 export default PorfessorResearch;
+
+export function PorfessorResearchEdit() {
+  return (
+    <>
+      <AllContain id = "Experience">
+      <HeaderTitleContain>
+        <HeaderTitle>Research Experience</HeaderTitle>
+        <Divider  sx={{ bgcolor: "black" }}/>
+      </HeaderTitleContain>
+      <TitleANDContain>
+        <ResearchEXP action="Edit" />
+      </TitleANDContain>
+    </AllContain>
+    </>
+  );
+}
+

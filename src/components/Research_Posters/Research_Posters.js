@@ -18,6 +18,7 @@ const PosterTitleDiv = styled.div`
   color: white;
 `;
 
+export {PosterContain}
 
 const PosterTitle = styled.h1`
   color:white;

@@ -285,7 +285,7 @@ export function ResearchInterestsEdit() {
                   <style>{CardImg}</style>
                   <Box sx={{ pb: 5 }}>
                     <Typography
-                      sx={{ fontSize: 20, pt: 5 }}
+                      sx={{ fontSize: 10, pt: 5 }}
                       color="text.secondary"
                       style={{ fontWeight: 500 }}
                     >

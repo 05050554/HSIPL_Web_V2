@@ -29,3 +29,19 @@ const ProfessorEducation = () => {
 };
 
 export default ProfessorEducation;
+
+export function ProfessorEducationEdit() {
+  return (
+    <>
+      <AllContain id="Education">
+        <HeaderTitleContain>
+          <HeaderTitle>Education</HeaderTitle>
+          <Divider sx={{ bgcolor: "black" }} />
+        </HeaderTitleContain>
+        <TitleANDContain>
+          <ProfessorEdu action="Edit" />
+        </TitleANDContain>
+      </AllContain>
+    </>
+  );
+}

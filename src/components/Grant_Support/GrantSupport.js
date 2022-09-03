@@ -23,3 +23,17 @@ const GrantSupport = () => {
 };
 
 export default GrantSupport;
+
+export function GrantSupportEdit() {
+  return (
+    <AllContain>
+      <HeaderTitleContain>
+        <HeaderTitle>Grant Support and Projects</HeaderTitle>
+        <Divider  sx={{ bgcolor: "black" }}/>
+      </HeaderTitleContain>
+      <TitleANDContain>
+        <GrantTable action="Edit"/>
+      </TitleANDContain>
+    </AllContain>
+  );
+}

@@ -23,3 +23,19 @@ const ProfessorTalks = () => {
 }
 
 export default ProfessorTalks
+
+export function ProfessorTalksEdit() {
+  return (
+    <AllContain id="Talks">
+      <HeaderTitleContain>
+        <HeaderTitle>Talks</HeaderTitle>
+        <Divider  sx={{ bgcolor: "black" }}/>
+      </HeaderTitleContain>
+      
+      <TitleANDContain>
+        <Talks action="Edit"/>
+      </TitleANDContain>
+    </AllContain>
+  )
+  
+}

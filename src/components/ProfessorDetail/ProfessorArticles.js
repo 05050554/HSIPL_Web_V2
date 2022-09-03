@@ -22,3 +22,18 @@ const ProfessorArticles = () => {
 };
 
 export default ProfessorArticles;
+
+export function ProfessorArticlesEdit() {
+  return (
+    <AllContain id="Publication">
+      <HeaderTitleContain>
+        <HeaderTitle>Journal Articles</HeaderTitle>
+        <Divider   sx={{ bgcolor: "black" }}/>
+      </HeaderTitleContain>
+      <TitleANDContain>
+        <JournalArt action="Edit"/>
+      </TitleANDContain>
+    </AllContain>
+  );
+
+}

@@ -22,3 +22,18 @@ const ProfessorAwards = () => {
 }
 
 export default ProfessorAwards
+
+export function ProfessorAwardsEdit() {
+  return (
+    <AllContain id="Awards">
+      <HeaderTitleContain>
+        <HeaderTitle>Awards</HeaderTitle>
+        <Divider  sx={{ bgcolor: "black" }}/>
+      </HeaderTitleContain>
+      <TitleANDContain>
+        <ProfessorAward action="Edit"/>
+      </TitleANDContain>
+    </AllContain>
+  )
+
+}

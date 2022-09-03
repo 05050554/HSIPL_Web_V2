@@ -51,7 +51,6 @@ const Research_Interests_Cards = () => {
       try {
         let { data } = await axios.get(research_url);
         setArrayData(data.data);
-        console.log(data.data);
       } catch (e) {}
     };
     research_api();

@@ -88,7 +88,7 @@ const Navbar = () => {
   return (
     <nav class="navbar sticky-top navbar-expand-lg ">
       <style>{NavContain}</style>
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/">
         <LogoImg className="logo_HP" src={logo}></LogoImg>
       </a>
       <button

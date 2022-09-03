@@ -120,7 +120,7 @@ export function NewsCardsEdit() {
     setNewOpen(false);
   };
 
-  const handleNewsInfo = (e) => {
+  const handleNewInfo = (e) => {
     const { value, name } = e.target;
     setNewInfo((preData) => ({
       ...preData,
@@ -250,7 +250,7 @@ export function NewsCardsEdit() {
                 actionClose={handleNewClose}
                 titleName="新增資訊"
                 actionSubmit={handleNewSubmit}
-                actionInfoChange={handleNewsInfo}
+                actionInfoChange={handleNewInfo}
                 actionImg={onImageChange}
                 image={image}
                 date={newInfo.date}
@@ -262,15 +262,16 @@ export function NewsCardsEdit() {
                 actionOpen={editOpen}
                 actionClose={handleEditClose}
                 titleName="修改資訊"
-                actionInfoChange={handleNewsInfo}
+                actionInfoChange={handleNewInfo}
                 actionSubmit={handleEditSubmit}
                 actionImg={onImageChange}
+                number={item.id}
                 image={image}
                 IP={IP}
                 currentImg={currentValue.img}
                 currentDate={currentValue.date}
                 currentContent={currentValue.content}
-                number={item.id}
+        
               />
               <DeleteBtn action={() => handleDeleteClickOpen(item)} />
               {/*Delete dialog*/}

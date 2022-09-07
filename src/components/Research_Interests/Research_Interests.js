@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Research_Interests_Describe from "./Research_Interests_Describe";
-import Research_Interests_Cards from "./Research_Interests_Cards";
+import ResearchInterestsDescribe from "./Research_Interests_Describe";
+import ResearchInterestsCards from "./Research_Interests_Cards";
 const InterestsContent = styled.div`
   background-color: #2d3a4b;
 `;
@@ -15,8 +15,8 @@ const Research_Interests = () => {
   return (
     <InterestsContent id="Interests">
       <InterestsTitle>Research Interests</InterestsTitle>
-      <Research_Interests_Describe/>
-      <Research_Interests_Cards/>
+      <ResearchInterestsDescribe/>
+      <ResearchInterestsCards/>
     </InterestsContent>
   );
 };

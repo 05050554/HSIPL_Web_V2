@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../../assets/images/LOGO_1.png";
-import About_Carousel from "./AboutCarousel";
+import AboutCarousel from "./AboutCarousel";
 
 const AboutContain = styled.div`
   float: right;
@@ -65,7 +64,7 @@ const Text = {
 const About_HSIPL = () => {
   return (
     <>
-      <About_Carousel />
+      <AboutCarousel />
       <AboutContain id="About_HSIPL">About HSIPL</AboutContain>
       <VideoContent>
         <iframe

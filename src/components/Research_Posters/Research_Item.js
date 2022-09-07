@@ -9,7 +9,6 @@ import {
   DeletePosterDialog,
 } from "./Research_Dialog";
 
-import { PosterContain } from "./Research_Posters";
 const Posters = styled.div`
   display: flex;
   justify-content: center;
@@ -93,7 +92,7 @@ const Research_Item = () => {
 
 export default Research_Item;
 
-export function Research_ItemEdit() {
+export function ResearchItemEdit() {
   const [arrayData, setArrayData] = useState([]);
   const [newOpen, setNewOpen] = useState(false);
   const [editOpen, setEditOpen] = useState(false);

@@ -1,5 +1,5 @@
 import React from "react";
-import Research_Item from "./Research_Item";
+import ResearchItem from "./Research_Item";
 import styled from "styled-components";
 import { ButtonTop } from "../HomePage/Home";
 const PosterContain = styled.div`
@@ -33,7 +33,7 @@ const Research_Posters = () => {
       <PosterTitleDiv>
        <PosterTitle> Research Posters</PosterTitle>
         </PosterTitleDiv>
-      <Research_Item />
+      <ResearchItem />
       <ButtonTop onClick={handleClick}>TOP</ButtonTop>
     </PosterContain>
   );

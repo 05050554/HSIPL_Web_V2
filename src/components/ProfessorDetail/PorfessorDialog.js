@@ -10,8 +10,6 @@ import {
   TextField,
 } from "@mui/material";
 import Button from "@mui/material/Button";
-import { UploadImgButton } from "../ToolBox/Button";
-import Styled from "styled-components";
 
 export const AddFourDialog = (props) => {
   return (
@@ -89,10 +87,6 @@ export const AddFourDialog = (props) => {
 };
 
 export const EditFourDialog = (props) => {
-  const Img = Styled.img`
-      margin: auto;
-      width: 60%;
-    `;
   return (
     <Dialog
       open={props.actionOpen}
@@ -169,10 +163,6 @@ export const EditFourDialog = (props) => {
 };
 
 export const DeleteFourDialog = (props) => {
-  const Img = Styled.img`
-        margin: auto;
-        width: 60%;
-      `;
   return (
     <Dialog
       open={props.actionOpen}
@@ -301,10 +291,6 @@ export const AddThreeDialog = (props) => {
 };
 
 export const EditThreeDialog = (props) => {
-  const Img = Styled.img`
-        margin: auto;
-        width: 60%;
-      `;
   return (
     <Dialog
       open={props.actionOpen}
@@ -386,7 +372,7 @@ export const DeleteThreeDialog = (props) => {
       </DialogTitle>
 
       <form onSubmit={props.actionSubmit}>
-        <DialogContent >
+        <DialogContent>
           <List aria-label="mailbox folders">
             <ListItem button>
               <ListItemText primary="ID :" sx={{ maxWidth: "60%" }} />
@@ -478,10 +464,6 @@ export const AddTwoDialog = (props) => {
 };
 
 export const EditTwoDialog = (props) => {
-  const Img = Styled.img`
-            margin: auto;
-            width: 60%;
-          `;
   return (
     <Dialog
       open={props.actionOpen}
@@ -626,10 +608,6 @@ export const AddOneDialog = (props) => {
 };
 
 export const EditOneDialog = (props) => {
-  const Img = Styled.img`
-                margin: auto;
-                width: 60%;
-              `;
   return (
     <Dialog
       open={props.actionOpen}

@@ -1,4 +1,3 @@
-import { textAlign } from "@mui/system";
 import React from "react";
 import styled from "styled-components";
 import logo from "../assets/images/LOGO_1.png";
@@ -75,14 +74,7 @@ const NavContain = `
 }
 `;
 
-const LoginA = styled.a`
-  text-align: center;
-  color: white;
-  text-decoration: none;
-  &:hover {
-    color: orange;
-  }
-`;
+
 
 const Navbar = () => {
   return (
@@ -220,6 +212,7 @@ const Navbar = () => {
                       <a
                         class="dropdown-item ps-4 "
                         target="_blank"
+                        rel="noreferrer noopener"
                         href="https://scholar.google.com/citations?user=0LxRRawAAAAJ&hl=zh-TW"
                       >
                         {listName}

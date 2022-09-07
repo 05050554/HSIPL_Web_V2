@@ -80,6 +80,7 @@ const Research_Interests_Cards = () => {
                   <iframe
                     src={IP + item.img}
                     frameborder="0"
+                    title={item.img}
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                     width="85%"
@@ -269,6 +270,7 @@ export function ResearchInterestsEdit() {
                       frameborder="0"
                       allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen
+                      title={item.img}
                       width="85%"
                     ></iframe>
                   ) : (

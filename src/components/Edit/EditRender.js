@@ -13,7 +13,7 @@ import { ProfessorTalksEdit } from "../ProfessorDetail/ProfessorTalks";
 import { ProfessorServiceEdit } from "../ProfessorDetail/ProfessorService";
 import { ProfessorConferencEdit } from "../ProfessorDetail/ProfessorConference";
 import { ProfessorAwardsEdit } from "../ProfessorDetail/ProfessorAwards";
-import { Research_ItemEdit } from "../Research_Posters/Research_Item";
+import { ResearchItemEdit } from "../Research_Posters/Research_Item";
 import { GrantSupportEdit } from "../Grant_Support/GrantSupport";
 import { EquipmentOWEdit } from "../Equipment/EquipmentOW";
 const EditRender = (props) => {
@@ -44,7 +44,7 @@ const EditRender = (props) => {
       ):props.select === "12" ? (
         <ProfessorAwardsEdit />
       ):props.select === "13" ? (
-        <Research_ItemEdit />
+        <ResearchItemEdit />
       ):props.select === "14" ? (
         <GrantSupportEdit />
       ):props.select === "15" ? (

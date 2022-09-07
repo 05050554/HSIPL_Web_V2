@@ -25,7 +25,6 @@ const Input = styled(TextField)({
 });
 
 const Submit = styled(Button)({
-  margin: "2rem 5rem 5rem 5rem",
   margin: "auto",
   width: "30%",
 });
@@ -56,11 +55,10 @@ const Login = () => {
       "Content-Type": "application/json",
 
     },
-    // withCredentials: true,
   };
 
   useEffect(() => {
-    if (localStorage.getItem("user-info")) {
+    if (localStorage.getItem("user-info") || userLogin) {
       history.push("/");
     }
   });

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Table, Tabs, Collapse, List } from "antd";
+import { Table, Collapse } from "antd";
 import { AddBtn, EditBtn, DeleteBtn } from "../ToolBox/Button";
 import {
   AddFourDialog,
@@ -16,7 +16,6 @@ import {
   EditOneDialog,
   DeleteOneDialog,
 } from "../ProfessorDetail/PorfessorDialog";
-const { TabPane } = Tabs;
 const { Panel } = Collapse;
 
 const GrantTable = (props) => {
@@ -1198,7 +1197,7 @@ export function ServiceTag1(props) {
       } catch (e) {}
     };
     api();
-  }, []);
+  }, [url]);
 
   const handleNewClickOpen = () => {
     setNewOpen(true);
@@ -1439,7 +1438,7 @@ export function ServiceTag2(props) {
       } catch (e) {}
     };
     api();
-  }, []);
+  }, [url]);
 
   const handleNewClickOpen = () => {
     setNewOpen(true);
@@ -1662,7 +1661,7 @@ export function ServiceTag3(props) {
       } catch (e) {}
     };
     api();
-  }, []);
+  }, [url]);
 
   const handleNewClickOpen = () => {
     setNewOpen(true);

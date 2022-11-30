@@ -10,7 +10,7 @@ import {
 import Divider from '@mui/material/Divider';
 const GrantSupport = () => {
   return (
-    <AllContain>
+    <AllContain id="Projects">
       <HeaderTitleContain>
         <HeaderTitle>Grant Support and Projects</HeaderTitle>
         <Divider  sx={{ bgcolor: "black" }}/>

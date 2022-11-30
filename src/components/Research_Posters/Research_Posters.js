@@ -29,7 +29,7 @@ const Research_Posters = () => {
     window.scrollTo(0, 0)
   }
   return (
-    <PosterContain>
+    <PosterContain id="Posters">
       <PosterTitleDiv>
        <PosterTitle> Research Posters</PosterTitle>
         </PosterTitleDiv>

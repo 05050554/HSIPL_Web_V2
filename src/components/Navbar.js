@@ -22,6 +22,8 @@ const MulitiplePages = [
       "Conference",
       "Awards",
       "Google",
+      "Posters",
+      "Projects",
     ],
   },
   { name: "Members", href: "Members", list: ["Senior", "Junior", "Alumnus"] },
@@ -145,7 +147,28 @@ const Navbar = () => {
                       >
                         {listName}
                       </a>
-                    ) : listName === "SnapShot" ? (
+                    ) : 
+                    
+                    
+                    listName === "Posters" ? (
+                      <a
+                        class="dropdown-item ps-4 "
+                        href={"LearnMore#" + listName}
+                      >
+                        {listName}
+                      </a>
+                    ) :
+
+                    listName === "Projects" ? (
+                      <a
+                        class="dropdown-item ps-4 "
+                        href={"LearnMore#" + listName}
+                      >
+                        {listName}
+                      </a>
+                    ) :
+                    
+                    listName === "SnapShot" ? (
                       <a
                         class="dropdown-item ps-4 "
                         href={"LearnMore#" + listName}

@@ -178,8 +178,9 @@ export function MembersCardsEdit() {
     const members_api = async () => {
       try {
         let { data } = await axios.get(url);
+        console.log("123")
         setArrayData(data.data);
-      } catch (e) {}
+      } catch (e) { console.log("456")}
     };
     members_api();
   }, []);

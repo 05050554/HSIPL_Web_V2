@@ -24,8 +24,8 @@ const Content = styled.div``;
 const News_Cards = () => {
   const [arrayData, setArrayData] = useState([]);
 
-  const IP = "http://140.125.45.160:6969/";
-  const news_url = "http://140.125.45.160:6969/api/lab/news";
+  const IP = "http://140:125:45:164:6969/";
+  const news_url = "http://140:125:45:164:6969/api/lab/news";
 
   useEffect(() => {
     const news_api = async () => {
@@ -93,8 +93,8 @@ export function NewsCardsEdit() {
 
   const [image, setImage] = useState(null);
 
-  const IP = "http://140.125.45.160:6969/";
-  const url = "http://140.125.45.160:6969/api/lab/news";
+  const IP = "http://140:125:45:164:6969/";
+  const url = "http://140:125:45:164:6969/api/lab/news";
   const config = {
     headers: {
       Accept: "application/json",

@@ -48,7 +48,7 @@ const Login = () => {
   const [errMes, setErrMes] = useState("");
 
   let navigate = useNavigate();
-  const url = "http://140.125.45.160:6969/api/user/login/";
+  const url = "http://140:125:45:164:6969/api/user/login/";
   const config = {
     headers: {
       Accept: "application/json",

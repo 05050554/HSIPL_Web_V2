@@ -43,8 +43,8 @@ const ResearchContent = styled.div`
 const Research_Interests_Cards = () => {
   const [arrayData, setArrayData] = useState([]);
 
-  const IP = "http://140.125.45.160:6969/";
-  const research_url = "http://140.125.45.160:6969/api/lab/research";
+  const IP = "http://140:125:45:164:6969/";
+  const research_url = "http://140:125:45:164:6969/api/lab/research";
 
   useEffect(() => {
     const research_api = async () => {
@@ -125,8 +125,8 @@ export function ResearchInterestsEdit() {
   const [newInfo, setNewInfo] = useState([]);
 
   const [image, setImage] = useState(null);
-  const IP = "http://140.125.45.160:6969/";
-  const url = "http://140.125.45.160:6969/api/lab/research";
+  const IP = "http://140:125:45:164:6969/";
+  const url = "http://140:125:45:164:6969/api/lab/research";
   const config = {
     headers: {
       Accept: "application/json",

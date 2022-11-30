@@ -25,7 +25,7 @@ const GrantTable = (props) => {
   const [editOpen, setEditOpen] = useState(false);
   const [currentValue, setCurrentValue] = useState("");
   const [deleteOpen, setDeleteOpen] = useState(false);
-  const url = "http://140.125.45.160:6969/api/lab/projects";
+  const url = "http://140:125:45:164:6969/api/lab/projects";
   const config = {
     headers: {
       Accept: "application/json",
@@ -264,8 +264,8 @@ export function ProfessorEdu(props) {
   const [editOpen, setEditOpen] = useState(false);
   const [currentValue, setCurrentValue] = useState("");
   const [deleteOpen, setDeleteOpen] = useState(false);
-  const IP = "http://140.125.45.160:6969/";
-  const url = "http://140.125.45.160:6969/api/lab/education";
+  const IP = "http://140:125:45:164:6969/";
+  const url = "http://140:125:45:164:6969/api/lab/education";
   const config = {
     headers: {
       Accept: "application/json",
@@ -504,7 +504,7 @@ export function ResearchEXP(props) {
   const [editOpen, setEditOpen] = useState(false);
   const [currentValue, setCurrentValue] = useState("");
   const [deleteOpen, setDeleteOpen] = useState(false);
-  const url = "http://140.125.45.160:6969/api/lab/researchExperience";
+  const url = "http://140:125:45:164:6969/api/lab/researchExperience";
   const config = {
     headers: {
       Accept: "application/json",
@@ -717,7 +717,7 @@ export function ResearchEXP(props) {
 
 export function JournalArt(props) {
   const [arrayData, setArrayData] = useState([]);
-  const url = "http://140.125.45.160:6969/api/lab/articles";
+  const url = "http://140:125:45:164:6969/api/lab/articles";
   const [newOpen, setNewOpen] = useState(false);
   const [newInfo, setNewInfo] = useState([]);
   const [editOpen, setEditOpen] = useState(false);
@@ -957,7 +957,7 @@ export function Talks(props) {
   const [editOpen, setEditOpen] = useState(false);
   const [currentValue, setCurrentValue] = useState("");
   const [deleteOpen, setDeleteOpen] = useState(false);
-  const url = "http://140.125.45.160:6969/api/lab/talks";
+  const url = "http://140:125:45:164:6969/api/lab/talks";
   const config = {
     headers: {
       Accept: "application/json",
@@ -1177,9 +1177,9 @@ export function ServiceTag1(props) {
   const [currentValue, setCurrentValue] = useState("");
   const [deleteOpen, setDeleteOpen] = useState(false);
   const num = props.num;
-  const urlOld = "http://140.125.45.160:6969/api/lab/service?tag=";
+  const urlOld = "http://140:125:45:164:6969/api/lab/service?tag=";
   const url = urlOld + num;
-  const url2 = "http://140.125.45.160:6969/api/lab/service";
+  const url2 = "http://140:125:45:164:6969/api/lab/service";
   const config = {
     headers: {
       Accept: "application/json",
@@ -1419,9 +1419,9 @@ export function ServiceTag2(props) {
   const [currentValue, setCurrentValue] = useState("");
   const [deleteOpen, setDeleteOpen] = useState(false);
   const num = props.num;
-  const urlOld = "http://140.125.45.160:6969/api/lab/service?tag=";
+  const urlOld = "http://140:125:45:164:6969/api/lab/service?tag=";
   const url = urlOld + num;
-  const url2 = "http://140.125.45.160:6969/api/lab/service";
+  const url2 = "http://140:125:45:164:6969/api/lab/service";
   const config = {
     headers: {
       Accept: "application/json",
@@ -1642,9 +1642,9 @@ export function ServiceTag3(props) {
   const [currentValue, setCurrentValue] = useState("");
   const [deleteOpen, setDeleteOpen] = useState(false);
   const num = props.num;
-  const urlOld = "http://140.125.45.160:6969/api/lab/service?tag=";
+  const urlOld = "http://140:125:45:164:6969/api/lab/service?tag=";
   const url = urlOld + num;
-  const url2 = "http://140.125.45.160:6969/api/lab/service";
+  const url2 = "http://140:125:45:164:6969/api/lab/service";
   const config = {
     headers: {
       Accept: "application/json",
@@ -1844,7 +1844,7 @@ export function Conference(props) {
   const [editOpen, setEditOpen] = useState(false);
   const [currentValue, setCurrentValue] = useState("");
   const [deleteOpen, setDeleteOpen] = useState(false);
-  const url = "http://140.125.45.160:6969/api/lab/conference";
+  const url = "http://140:125:45:164:6969/api/lab/conference";
   const config = {
     headers: {
       Accept: "application/json",
@@ -2044,7 +2044,7 @@ export function ProfessorAward(props) {
   const [editOpen, setEditOpen] = useState(false);
   const [currentValue, setCurrentValue] = useState("");
   const [deleteOpen, setDeleteOpen] = useState(false);
-  const url = "http://140.125.45.160:6969/api/lab/teacherAwards";
+  const url = "http://140:125:45:164:6969/api/lab/teacherAwards";
   const config = {
     headers: {
       Accept: "application/json",

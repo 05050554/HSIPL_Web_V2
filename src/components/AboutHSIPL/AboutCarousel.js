@@ -51,8 +51,8 @@ const Img = Styled.img`
 const About_Carousel = () => {
   const [arrayData, setArrayData] = useState([]);
 
-  const IP = "http://140.125.45.160:6969/";
-  const event_url = "http://140.125.45.160:6969/api/lab/eventImg";
+  const IP = "http://140:125:45:164:6969/";
+  const event_url = "http://140:125:45:164:6969/api/lab/eventImg";
 
   useEffect(() => {
     const event_api = async () => {
@@ -124,8 +124,8 @@ export const UploadImgButton = styled("input")({
 
 export function AboutCarouselEdit() {
   const [arrayData, setArrayData] = useState([]);
-  const IP = "http://140.125.45.160:6969/";
-  const event_url = "http://140.125.45.160:6969/api/lab/eventImg";
+  const IP = "http://140:125:45:164:6969/";
+  const event_url = "http://140:125:45:164:6969/api/lab/eventImg";
   const config = {
     headers: {
       Accept: "application/json",

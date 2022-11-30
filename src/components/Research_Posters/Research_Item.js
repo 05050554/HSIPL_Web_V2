@@ -61,8 +61,8 @@ const BTNDiv = styled.div``;
 const Research_Item = () => {
   const [arrayData, setArrayData] = useState([]);
 
-  const IP = "http://140.125.45.160:6969/";
-  const news_url = "http://140.125.45.160:6969/api/lab/posters";
+  const IP = "http://140:125:45:164:6969/";
+  const news_url = "http://140:125:45:164:6969/api/lab/posters";
 
   useEffect(() => {
     const news_api = async () => {
@@ -101,8 +101,8 @@ export function ResearchItemEdit() {
   const [newInfo, setNewInfo] = useState([]);
   const [image, setImage] = useState(null);
 
-  const IP = "http://140.125.45.160:6969/";
-  const url = "http://140.125.45.160:6969/api/lab/posters";
+  const IP = "http://140:125:45:164:6969/";
+  const url = "http://140:125:45:164:6969/api/lab/posters";
   const config = {
     headers: {
       Accept: "application/json",

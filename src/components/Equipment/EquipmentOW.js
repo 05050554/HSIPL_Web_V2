@@ -55,8 +55,8 @@ const Img2 = styled.img`
 
 const EquipmentOW = () => {
   const [arrayData, setArrayData] = useState([]);
-  const IP = "http://140.125.45.160:6969/";
-  const url = "http://140.125.45.160:6969/api/lab/equipment";
+  const IP = "http://140:125:45:164:6969/";
+  const url = "http://140:125:45:164:6969/api/lab/equipment";
 
   useEffect(() => {
     const api = async () => {
@@ -93,8 +93,8 @@ export function EquipmentOWEdit() {
   const [currentValue, setCurrentValue] = useState("");
   const [deleteOpen, setDeleteOpen] = useState(false);
   const [image, setImage] = useState(null);
-  const IP = "http://140.125.45.160:6969/";
-  const url = "http://140.125.45.160:6969/api/lab/equipment";
+  const IP = "http://140:125:45:164:6969/";
+  const url = "http://140:125:45:164:6969/api/lab/equipment";
   const config = {
     headers: {
       Accept: "application/json",
